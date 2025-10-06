@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 24px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.chat-button {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the color palette container */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+/* Style each color sample */
+.color-sample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the color input */
+.color-sample input[type="text"] {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border: none;
+    border-radius: 50%;
+}
+
+/* Style the color label */
+.color-sample label {
+    margin-top: 5px; /* Add space between the color sample and the label */
+}
+/* Styles for the Apartment Customization section */
+.apartment-customization {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Heading styles */
+.apartment-customization h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Customization group styles */
+.customization-group {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.customization-group h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Label styles */
+label {
+    font-weight: bold;
+}
+
+/* Select styles */
+select, input[type="color"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Textarea styles */
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Image upload styles */
+.image-upload input[type="file"] {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.image-upload label {
+    display: block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 16px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* CSS for User Dashboard Sections */
+section {
+    border: 1px solid #ccc;
+    margin: 20px 0; /* Add margin to space sections vertically */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    background-color: #66A7D8;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Arrow styles */
+.section-header span {
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.2s;
+}
+
+/* Add spacing between sections */
+section + section {
+    margin-top: 20px;
+}
+
+/* Style for the content inside sections */
+#openQueriesContent,
+#closedQueriesContent,
+#taskStatusContent {
+    padding: 10px;
+}
+
+/* Customize styles for the list of queries or task status */
+.query-item,
+.task-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Add hover effect for query/task items */
+.query-item:hover,
+.task-item:hover {
+    background-color: #f0f0f0;
+}
+
+.query-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.query-table th {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #666;
+}
+
+.query-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.query-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.query-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+.customization-group {
+    padding: 20px;
+}
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    border: 2px solid black;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px; /* Set the font size for the header title */
+    margin: 0; /* Remove margin around the title */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+li {
+    margin-right: 20px;
+}
+
+/* Search and Filter Queries Section Styling */
+.search-filter-queries-section {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"],
+select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0056b3; /* Button background color */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003a75; /* Button background color on hover */
+}
+
+/* Icon Styling */
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.chat-button,
+.navbar-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.navbar-expanded ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-expanded ul li {
+    border-bottom: 1px solid #555;
+}
+
+.navbar-expanded ul li:last-child {
+    border-bottom: none;
+}
+
+.navbar-expanded ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-expanded ul li a i {
+    margin-right: 10px;
+}
+
+.navbar-expanded {
+    position: fixed;
+    top: 60px;
+    right: -300px;
+    width: 150px;
+    height: calc(160px - 60px);
+    background-color: #66A7D8;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 1000;
+}
+.navbar-icon {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.navbar-expanded.show {
+    right: 0;
+}
+
+/* Hover styles */
+.navbar-expanded ul li:hover {
+    background-color: #555;
+}
+
+.navbar-expanded ul li a:hover {
+    color: #fff;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.navbar-toggle:hover {
+    color: #00bcd4;
+}
+/* Create the grid container for the 2x2 layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust the gap between grid items as needed */
+    margin: 20px;
+}
+
+/* Style individual grid items */
+.grid-item {
+    background-color: #f0f0f0; /* Background color for grid items */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border to each grid item */
+    border-radius: 5px; /* Add rounded corners to the grid items */
+}
+
+/* Style the form container */
+.query-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea.form-control {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Style the submit button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #005ea3;
+}
+
+/* Style the form container */
+#createQueryForm {
+    position: relative; /* Add this line to make it a positioning context */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+/* Style the close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #cc0000;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #a30000;
+}
+
+/* Style for the modal backdrop */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    z-index: 2; /* Place it above other elements */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: flex; /* Enable flexbox layout */
+}
+
+/* Style for the modal content (queries container) */
+.modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Style for the filtered queries inside the modal */
+.filtered-queries {
+    max-height: 400px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    padding: 10px; /* Add some padding for better spacing */
+}
+
+/* Style for each individual query item inside the filtered-queries container */
+.filtered-queries .query-item {
+    margin-bottom: 15px; /* Add spacing between query items */
+    border: 1px solid #ddd; /* Add a border around each item */
+    padding: 10px; /* Add padding to each item */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+/* Style for query item titles */
+.filtered-queries .query-item h3 {
+    font-size: 18px; /* Adjust the font size */
+    margin-bottom: 5px; /* Add spacing below the title */
+}
+
+/* Style for query descriptions */
+.filtered-queries .query-item p {
+    font-size: 14px; /* Adjust the font size for descriptions */
+    margin-bottom: 10px; /* Add spacing below each description */
+}
+
+/* Style for query status */
+.filtered-queries .query-item .status {
+    font-weight: bold; /* Make the status text bold */
+}
+
+/* Styling for the notification icon and badge */
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+
+/* Styling for the notification dropdown */
+.notification-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px; /* Adjust this value to position the dropdown as needed */
+    right: 0;
+    width: 300px; /* Adjust the width as needed */
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    z-index: 999;
+    max-height: 300px; /* Set a max height and add overflow-y for scroll if needed */
+    overflow-y: auto;
+}
+
+/* Styling for individual notifications in the dropdown */
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.notification-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+/* Styling for notification text and timestamp */
+#notificationList {
+    font-weight: bold;
+    color: black;
+}
+
+/* CSS for notification items */
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CSS for timestamps */
+.timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+.header-img {
+    width: 80px;
+    height: 70px;
+}
+
+.back-link {
+    cursor: pointer;
+    font-size: 40px;
+    color: #3f72af;
+    margin-right: 10px;
+}
