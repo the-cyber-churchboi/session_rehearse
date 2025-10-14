@@ -1,6 +1,0 @@
-{
-    "require": {
-        "swiftmailer/swiftmailer": "^6.2",
-        "google/apiclient": "^2.15"
-    }
-}
